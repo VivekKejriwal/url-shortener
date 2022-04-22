@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request,redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
-import random
+import random,dataclasses
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///urls.db'
